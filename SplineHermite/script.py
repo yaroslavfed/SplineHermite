@@ -6,11 +6,13 @@ import sys
 import struct
 import math
 
-x1 = np.arange(0.0, 0.51, 0.01)
+step = 0.01
+x1 = np.arange(-2, 2 + step, step)
 y1 = []
 for j in x1:
     #y1.append(math.pow(j, 3))
-    y1.append(math.exp(math.sin(j * math.pi)))
+    #y1.append(math.exp(math.sin(j * math.pi)))
+    y1.append(math.cos(math.sin(math.exp(j))))
 
 xp = []
 yp = []

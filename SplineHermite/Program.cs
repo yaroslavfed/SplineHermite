@@ -58,7 +58,7 @@ namespace SplineLagrange
         }
         #endregion DrawPlot
 
-        static private double function(double x) => Cos(Sin(Pow(E, x)));       // Pow(E, Sin(PI * x))     Pow(x, 3)
+        static private double function(double x) => Cos(Sin(Pow(E, x)));       // Pow(E, Sin(PI * x))   Pow(x, 3)   Cos(Sin(Pow(E, x)))
 
         #region PiecewiseCubicHermite
         static private double eps(double x, double xi, double h) => (x - xi) / h;
@@ -113,7 +113,7 @@ namespace SplineLagrange
                     }
                     if (p == n - 2)
                     {
-                        derivativePlus = dxn(function(points[p - 2]), function(points[p - 1]), function(points[p]), points[p - 1] - points[p - 2], points[p] - points[p - 1]);
+                        derivativePlus = dxn(function(points[n-1 - 2]), function(points[n-1 - 1]), function(points[n-1]), points[n-1 - 1] - points[n-1 - 2], points[n-1] - points[n-1 - 1]);
                     }
                     else
                     {

@@ -58,7 +58,7 @@ namespace SplineLagrange
         }
         #endregion DrawPlot
 
-        static private double function(double x) => Cos(Sin(Pow(E, x)));       // Pow(E, Sin(PI * x))   Pow(x, 3)   Cos(Sin(Pow(E, x)))
+        static private double function(double x) => 1 / (1 + 25 * Pow(x, 2));       // Pow(E, Sin(PI * x))   Pow(x, 3)   Cos(Sin(Pow(E, x)))
 
         #region PiecewiseCubicHermite
         static private double eps(double x, double xi, double h) => (x - xi) / h;

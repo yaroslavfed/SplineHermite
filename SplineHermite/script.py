@@ -12,7 +12,8 @@ y1 = []
 for j in x1:
     #y1.append(math.pow(j, 3))
     #y1.append(math.exp(math.sin(j * math.pi)))
-    y1.append(math.cos(math.sin(math.exp(j))))
+    #y1.append(math.cos(math.sin(math.exp(j))))
+    y1.append(1 / (1 + 25*math.pow(j, 2)))
 
 xp = []
 yp = []

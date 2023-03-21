@@ -7,7 +7,7 @@ import struct
 import math
 
 step = 0.01
-x1 = np.arange(-2, 2 + step, step)
+x1 = np.arange(-4, 4 + step, step)
 y1 = []
 for j in x1:
     #y1.append(math.pow(j, 3))
